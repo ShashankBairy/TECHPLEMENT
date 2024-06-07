@@ -1,0 +1,104 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header{
+        background-color: navajowhite;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        padding: 0 20px;
+    }
+    h1{
+        text-align: center;
+        flex: 1;
+    }
+    .search{
+        display: flex;
+        justify-content: center ;
+    }
+    #searchtext {
+        padding: 5px;
+        margin-right: 10px;
+    }
+    #searchbtn {
+        padding: 5px;
+        cursor: pointer;
+    }
+    .quote-container, .author-quote{
+        width: 100%;
+        height:500px;
+        display: grid;
+        place-content: center;
+    }
+    .quote-container h2{
+        text-align: center;
+    }
+    .quotecontent, .quote-box{
+        width: 500px;
+        height: 200px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
+    #author{
+        padding-top: 10px;
+    }
+    .newquote{
+        width:100px;
+        margin: 10px 200px;
+        background-color: aliceblue;
+        border-color: aliceblue;
+    }
+    .author-quote{
+        margin-top:1100px;
+        display: none;
+    }
+    .quote-box {
+        font-family: 'Roboto', sans-serif;
+        padding: 10px;
+        margin: 10px;
+    }
+
+@media (max-width:768px){
+    .quotecontent, .quote-box{
+            width: 90%;
+            height: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+    }
+    .quote-container, .author-quote{
+        height: auto;
+        padding: 20px;
+    }
+    .author-quote{
+        margin-top:0px;
+    }
+    .newquote{
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    .quote-container, .author-quote{
+        height: auot;
+        padding: 10px;
+    }
+    .quotecontent, .quote-box{
+        width: 95%;
+        height: auto;
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+    .newquote{
+        width: 90%;
+        padding: 10px;
+    }
+}
